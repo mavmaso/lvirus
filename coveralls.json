@@ -11,8 +11,8 @@
       "priv/",
       "test",
       "lib/lvirus_web.ex",
-      "lib/lvirus_web/channels/user_socket.ex",
       "lib/lvirus/application.ex",
+      "lib/lvirus_web/channels/user_socket.ex",
       "lib/lvirus_web/components/core_component",
       "lib/lvirus_web/router.ex",
       "lib/lvirus_web/telemetry.ex"

@@ -8,7 +8,7 @@ defmodule LvirusWeb.SurvivorLiveTest do
       params = %{
         name: "John",
         age: 20,
-        gender: "M",
+        gender: "M"
         # latitude: 1,
         # longitude: 2,
       }

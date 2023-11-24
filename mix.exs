@@ -53,7 +53,7 @@ defmodule Lvirus.MixProject do
       {:jason, "~> 1.2"},
       {:plug_cowboy, "~> 2.5"},
       {:excoveralls, "~> 0.18", only: :test},
-      # {:credo, "~> 1.7", only: [:dev, :test], runtime: false},
+      {:credo, "~> 1.7", only: [:dev, :test], runtime: false}
     ]
   end
 
@@ -71,7 +71,8 @@ defmodule Lvirus.MixProject do
       test: ["ecto.drop", "ecto.create --quiet", "ecto.migrate --quiet", "test --cover"],
       "assets.setup": ["tailwind.install --if-missing", "esbuild.install --if-missing"],
       "assets.build": ["tailwind default", "esbuild default"],
-      "assets.deploy": ["tailwind default --minify", "esbuild default --minify", "phx.digest"]
+      "assets.deploy": ["tailwind default --minify", "esbuild default --minify", "phx.digest"],
+      lint: ["format", "credo"]
     ]
   end
 end
