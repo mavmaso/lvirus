@@ -18,6 +18,7 @@ defmodule LvirusWeb.Router do
     pipe_through :browser
 
     get "/", PageController, :home
+    live "/survivors", SurvivorLive
   end
 
   # Other scopes may use custom stacks.
