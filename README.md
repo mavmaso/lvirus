@@ -1,18 +1,41 @@
-# Lvirus
+# L Virus
+ 
+It’s a a simple game, as a solution for the proposed problem below. The propose here is the use LiveView.
 
-To start your Phoenix server:
+### Proposal Problem
 
-  * Run `mix setup` to install and setup dependencies
-  * Start Phoenix endpoint with `mix phx.server` or inside IEx with `iex -S mix phx.server`
+  The world, as we know it, has fallen into an apocalyptic scenario. The Like-twiter Virus is transforming human beings into stupid beasts (a.k.a. Zombies), hungry to cancel humans and eat their limbs.
 
-Now you can visit [`localhost:4000`](http://localhost:4000) from your browser.
+  You, the last survivor who knows how to code, will help the resistance by deploying a system to connect the remaining humans. This system will be essential to detect new infections and share resources between the members.
 
-Ready to run in production? Please [check our deployment guides](https://hexdocs.pm/phoenix/deployment.html).
+## Deps for Linux
 
-## Learn more
+- `sudo apt update`
+- `sudo apt upgrade`
+- `sudo apt install -y build-essential libssl-dev zlib1g-dev automake autoconf libncurses5-dev`
+- `asdf install`
 
-  * Official website: https://www.phoenixframework.org/
-  * Guides: https://hexdocs.pm/phoenix/overview.html
-  * Docs: https://hexdocs.pm/phoenix
-  * Forum: https://elixirforum.com/c/phoenix-forum
-  * Source: https://github.com/phoenixframework/phoenix
+## In loco Setup
+
+- Install dependencies with `mix deps.get`
+- Create and migrate your database with `mix ecto.setup`
+- Start Phoenix endpoint with `mix phx.server`
+- Run complete tests `mix test`
+
+## Docker
+- docker-compose build
+- docker-compose run --rm web mix deps.get
+- docker-compose run --rm web mix ecto.setup
+- docker-compose run --rm web mix test
+- docker-compose up --force-recreate
+
+## Database
+  PostgreSQL
+  ```
+  username: postgres
+  password: postgres
+  ```
+
+## Made by
+
+ - [mavmaso](https://github.com/mavmaso)
