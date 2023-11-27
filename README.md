@@ -27,6 +27,9 @@ export ERLANG_OPENSSL_PATH="/usr/local/opt/openssl"
 brew install openssl
 ```
 
+- `asdf plugin-add erlang`
+- `asdf plugin-add elixir`
+
 ## In loco Setup
 
 - Install dependencies with `mix deps.get`
