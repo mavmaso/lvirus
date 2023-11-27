@@ -15,6 +15,18 @@ It’s a a simple game, as a solution for the proposed problem below. The propos
 - `sudo apt install -y build-essential libssl-dev zlib1g-dev automake autoconf libncurses5-dev`
 - `asdf install`
 
+## Install using ASDF
+
+NB: **⚠ MAC (M1, M2) users**: Use this before installing ASDF
+
+```bash
+export KERL_CONFIGURE_OPTIONS="--without-wx --without-javac"
+export ERLANG_OPENSSL_PATH="/usr/local/opt/openssl"
+
+# Open SSL is required before installing ASDF
+brew install openssl
+```
+
 ## In loco Setup
 
 - Install dependencies with `mix deps.get`
